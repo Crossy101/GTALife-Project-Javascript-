@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link href="../../fa/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../../css/Login-sys-UI.css" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="myaudiolist" preload="auto">
+        <source src="../../sound/mouseclick.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+
+            <div class="col-lg-2 col-md-4 my-auto">
+                <div class="animated fadeIn">
+                    <div class="card">
+                        <h5 class="card-header elegant-color h5 text-muted" style="border-top: solid 4px #3f729b;">Character Information</h5>
+                        <div class="card-body elegant-color-dark text-muted">
+                            <p class="card-text">Tell us a little bit about yourself!</p>
+                                
+                               <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationFirstName">First name</label>
+                                        <input type="text" class="firstname form-control" placeholder="John">
+                                        <div class="firstnamevalidation col-sm-12">
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationLastName">Last name</label>
+                                        <input type="text" class="lastname form-control"  placeholder="Doe">
+                                        <div class="lastnamevalidation col-sm-12">
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationNationality">Nationality</label>
+                                        <input type="text" class="national form-control"  placeholder="British">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="validationDateOfBirth">Date of Birth</label>
+                                        <input type="text" class="DateOfBirth form-control"  placeholder="DD/MM/YY">
+                                        <div class="heightvalidation col-sm-12">
+                                            <small></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="validationHeight">Height</label>
+                                        <input type="text" class="height form-control"  placeholder="cm">
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="card-footer elegant-color-dark">
+                            
+                                 <div class="btn-group btn-block GTA-RadioToolbar" data-toggle="buttons">
+                                     <label class="btn btn-sm btn-elegant text-white form-check-label active">
+                                         <input class="btngendermale form-check-input" type="radio"  gender="0" name="GenderOption" checked>
+                                         <i class="fas fa-mars mr-1"></i>Male
+                                     </label>
+                                     <label class="btn btn-sm btn-elegant text-white form-check-label">
+                                         <input class="btngenderfemale form-check-input" type="radio" gender="1" name="GenderOption">
+                                         <i class="fas fa-venus mr-1"></i>Female
+                                     </label>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col"></div>
+
+            <div class="col-lg-2 col-md-4 my-auto">
+                <div class="animated fadeIn">
+                    <div class="card">
+                        <h5 class="card-header elegant-color h5 text-muted" style="border-top: solid 4px #3f729b;">Character Customisation</h5>
+                        <div class="card-body elegant-color-dark text-muted">
+                            <p class="card-text">Now show us how good you look!</p>
+                            <nav>
+                                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link grey-text active" id="FaceTab1-tab" data-toggle="tab" href="#FaceTab1" role="tab">Face</a>
+                                    <a class="nav-item nav-link grey-text" id="HairTab2-tab" data-toggle="tab" href="#HairTab2" role="tab">Hair</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content grey-text" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="FaceTab1" role="tabpanel">
+                                    <h6 class="mb-0 mt-2">Nose Length</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <input type="range" class="componentslider custom-range" min="-1.0" max="1.0" step="0.01" componentid="2" oninput="SliderChange($(this).val(), $(this).attr('componentid'));">
+                                    </div>
+                                    <h6 class="mb-0 mt-2">Brow Height</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <input type="range" class="componentslider custom-range" min="-1.0" max="1.0" step="0.01" componentid="6" oninput="SliderChange($(this).val(), $(this).attr('componentid'));">
+                                    </div>
+                                    <h6 class="mb-0 mt-2">Cheekbone Width</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <input type="range" class="componentslider custom-range" min="-1.0" max="1.0" step="0.01" componentid="8" oninput="SliderChange($(this).val(), $(this).attr('componentid'));">
+                                    </div>
+                                    <h6 class="mb-0 mt-2">Eyes</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <input type="range" class="componentslider custom-range" min="-1.0" max="1.0" step="0.01" componentid="11" oninput="SliderChange($(this).val(), $(this).attr('componentid'));">
+                                    </div>
+                                    <h6 class="mb-0 mt-2">Lips</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <input type="range" class="componentslider custom-range" min="-1.0" max="1.0" step="0.01" componentid="12" oninput="SliderChange($(this).val(), $(this).attr('componentid'));">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="HairTab2" role="tabpanel">
+								    <h6 class="mb-0 mt-2">Hair Style</h6>
+                                    <div class="row no-gutters pt-2 pb-2">
+                                        <div class="col-1">
+                                            <button type="button" class="btn btn-sm m-0 pl-0 pr-0 btn-block unique-color text-white" id="prev_button"><i class="fa fa-angle-double-left"></i></button>
+                                        </div>
+                                        <div class="col-10 elegant-color text-truncate">
+                                            <div class="grey-text text-center" style="line-height: 200%;" id="output"></div>
+                                        </div>
+                                        <div class="col-1">
+                                            <button type="button" class="btn btn-sm m-0 pl-0 pr-0 btn-block unique-color text-white" id="next_button"><i class="fa fa-angle-double-right"></i></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer elegant-color">
+                            <button type="button" class="btn-GTACreateCharacter btn unique-color text-white btn-block" ><i class="fa fa-user-plus mr-1"></i>Create Character</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- UI Events Script (DO NOT REMOVE) -->
+    <script type="text/javascript" src="../../UI-Actions/character-creation.js"></script>
+    <!-- GTALife Customisation Selection Menu -->
+    <script type="text/javascript" src="../../js/CreateChar-FeaturesSelection.js"></script>
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

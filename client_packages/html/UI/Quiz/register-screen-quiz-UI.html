@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link href="../../fa/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../../css/Login-sys-UI.css" rel="stylesheet">
+    <!-- Quiz Step Form -->
+    <link href="../../css/Register-Screen-Quiz.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col">
+            </div>
+
+            <div class="col-lg-5 my-auto">
+                <div class="card">
+                    <div class="card-header elegant-color" style="border-top: solid 4px #3f729b;">
+                        <img class="img-fluid mx-auto d-block" alt="GTA_Logo" src="https://gtalife.co.uk/uploads/monthly_2019_04/gtalife-logo-header-230x80.png.ac00d5b6728f7a0a62931147335d4371.png">
+                        
+                    </div>
+                    <div class="card-body elegant-color-dark pb-0">
+                        <div class="card-body elegant-color-dark text-muted">
+                    
+                         <form id="regForm" action="">
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab">
+                            <!-- Question 1 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">1) When you die the new life rule applies. What do you forget?</h5>
+                                <div class="GTA-quizQ1 ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q1A1" name="Question1Radio" checked>
+                                        <label class="custom-control-label" for="Q1A1">How you died</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q1A2" name="Question1Radio">
+                                        <label class="custom-control-label" for="Q1A2">Who killed you</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q1A3" name="Question1Radio">
+                                        <label class="custom-control-label" for="Q1A3">The scene of your death</label>
+                                    </div>
+									<!-- Correct -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q1A4" name="Question1Radio">
+                                        <label class="custom-control-label" for="Q1A4">All the above</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab">
+                            <!-- Question 2 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">2) Can you commit suicide on the server?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q2A1" name="Question2Radio" checked>
+                                        <label class="custom-control-label" for="Q2A1">Yes</label>
+                                    </div>
+									<!-- Correct -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q2A2" name="Question2Radio">
+                                        <label class="custom-control-label" for="Q2A2">No</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q2A3" name="Question2Radio">
+                                        <label class="custom-control-label" for="Q2A3">No but my friend can kill me.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab">
+                            <!-- Question 3 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">3) If your engine is switched on and you are in your vehicle, can you drive off if someone approaches you at gun point?</h5>
+                                <div class="ml-3">
+									<!-- Correct -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q3A1" name="Question3Radio" checked>
+                                        <label class="custom-control-label" for="Q3A1">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q3A2" name="Question3Radio">
+                                        <label class="custom-control-label" for="Q3A2">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab">
+                            <!-- Question 4 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">4) How many minutes must you wait after a roleplay situation has ended before you disconnect?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q4A1" name="Question4Radio" checked>
+                                        <label class="custom-control-label" for="Q4A1">5 minutes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q4A2" name="Question4Radio">
+                                        <label class="custom-control-label" for="Q4A2">10 minutes</label>
+                                    </div>
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q4A3" name="Question4Radio">
+                                        <label class="custom-control-label" for="Q4A3">15 minutes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q4A4" name="Question4Radio">
+                                        <label class="custom-control-label" for="Q4A4">20 minutes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Question 5 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">5) Which of these is not a no crime zone?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q5A1" name="Question5Radio" checked>
+                                        <label class="custom-control-label" for="Q5A1">Law enforcement offices and buildings</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q5A2" name="Question5Radio">
+                                        <label class="custom-control-label" for="Q5A2">Fire stations</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q5A3" name="Question5Radio">
+                                        <label class="custom-control-label" for="Q5A3">Government offices</label>
+                                    </div>
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q5A4" name="Question5Radio">
+                                        <label class="custom-control-label" for="Q5A4">Los Santos International</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Question 6 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">6) Which of these statements relating to random deathmatching is incorrect according to our rules?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q6A1" name="Question6Radio" checked>
+                                        <label class="custom-control-label" for="Q6A1">You can attack or kill another person If they breach FRP rules.</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q6A2" name="Question6Radio">
+                                        <label class="custom-control-label" for="Q6A2">You cannot kill someone who is complying under any circumstance.</label>
+                                    </div>
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q6A3" name="Question6Radio">
+                                        <label class="custom-control-label" for="Q6A3">You can kill someone if they have harmed you or your friends.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Question 7 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">7) How often can you advertise your business or services in chat?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q7A1" name="Question7Radio" checked>
+                                        <label class="custom-control-label" for="Q7A1">15 minutes</label>
+                                    </div>
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q7A2" name="Question7Radio">
+                                        <label class="custom-control-label" for="Q7A2">30 minutes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q7A3" name="Question7Radio">
+                                        <label class="custom-control-label" for="Q7A3">45 minutes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q7A4" name="Question7Radio">
+                                        <label class="custom-control-label" for="Q7A4">60 minutes</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Question 8 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">8) If you game crashes, or you are kicked from the server, what happens?</h5>
+                                <div class="ml-3">
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q8A1" name="Question8Radio" checked>
+                                        <label class="custom-control-label" for="Q8A1">You reconnect and continue were you left off.</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q8A2" name="Question8Radio">
+                                        <label class="custom-control-label" for="Q8A2">Your life has ended therefore new life rule applies.</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q8A3" name="Question8Radio">
+                                        <label class="custom-control-label" for="Q8A3">You can reconnect but must wait 15 minutes before initiating.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Question 9 -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">9) Which of these actions is not failure to roleplay?</h5>
+                                <div class="ml-3">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q9A1" name="Question9Radio" checked>
+                                        <label class="custom-control-label" for="Q9A1">Unauthorised landings.</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q9A2" name="Question9Radio">
+                                        <label class="custom-control-label" for="Q9A2">Using your aircraft as a weapon.</label>
+                                    </div>
+									<!-- Correct  -->
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="correct-answer custom-control-input" id="Q9A3" name="Question9Radio">
+                                        <label class="custom-control-label" for="Q9A3">Doing stunts and jumps in valuable cars.</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" class="custom-control-input" id="Q9A4" name="Question9Radio">
+                                        <label class="custom-control-label" for="Q9A4">Excessive vehicle ramming.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!-- Submit Quiz -->
+                            <div style="height: 20vh;">
+                                <h5 class="text-muted mb-3">On a final note...</h5>
+                                <div>
+                                    <p class="text-muted">Thank you for taking the time to complete our Entry Quiz.</p>
+                                    <p class="text-muted">Please double checks all of your answers before submitting.</p>
+                                    <p class="text-muted">Failure to pass the quiz will result in a cooldown period of 60 minutes before you can retake the quiz.</p>
+                                </div>
+                            </div>
+                        </div>   
+                    
+
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align:center;margin-top:40px;">
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                        </div>
+
+                        </form> 
+                        </div>
+                        
+                        
+
+                    </div>
+                    <div class="card-footer elegant-color">
+                        <div style="float:right;">
+                            <button type="button" class="GTA-quizPrevButton btn unique-color text-white" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                            <button type="button" class="GTA-quizNextButton btn unique-color text-white" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+	<!-- UI Events Script (DO NOT REMOVE) -->
+	<script type="text/javascript" src="../../UI-Actions/register-screen-quiz-UI.js"></script>
+</body>
+
+</html>

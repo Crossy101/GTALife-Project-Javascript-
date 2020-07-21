@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link href="../../fa/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+
+    <link href="ATM.css" rel="stylesheet">
+</head>
+
+<body>
+    <button type="button" class="btn-OpenATM btn btn-primary btn-lg" style="display:none;" data-toggle="modal" data-target="#ModalATMUI" data-backdrop="static">
+        Launch demo modal
+    </button>
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="modal animated fade faster bottom" id="ModalATMUI" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content z-depth-0 remove-background">
+                <div class="modal-body text-white pl-0 pr-0 pt-0 pb-2">
+                    <div class="card text-center GTA-MaxScrollHeight z-depth-0">
+                        <div class="card-header text-white text-left GTA-RedGradient1">
+                            <span class="lead">ATM</span>
+                            <button class="btn btn-light p-0 m-0 z-depth-0 float-right" onclick="CloseATM();" type="button" data-dismiss="modal" style="height: 30px; width: 30px;">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="card-body GTA-BankFrontBG">
+                            <img src="maze-bank-vertical-logo.png" class="img-fluid w-50 pt-5 pb-5" draggable="false">
+                        </div>
+                        <div class="card-footer p-0 remove-border z-depth-0">
+                            <div class="btn-group btn-block" role="group">
+                                <button type="button" class="btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0" data-toggle="modal" data-target="#deposit-tab" data-backdrop="false">
+                                    <span class="lead">deposit</span>
+                                </button>
+                                <button type="button" class="btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0" data-toggle="modal" data-target="#withdraw-tab" data-backdrop="false">
+                                    <span class="lead">withdraw</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer remove-border p-0 rounded">
+                    <div class="p-0">
+                        <img class="img-fluid " draggable="false" src="maze-bank-long-advert.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="modal animated fadeIn faster bottom" id="deposit-tab" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content z-depth-0 remove-background">
+                <div class="modal-body text-white pl-0 pr-0 pt-0 pb-2">
+                    <div class="card z-depth-0 text-center GTA-MaxScrollHeight">
+                        <div class="card-header text-white text-left GTA-RedGradient1">
+                            <span class="lead">Deposit</span>
+                            <button class="btn btn-light p-0 m-0 z-depth-0 float-right" type="button" data-dismiss="modal" style="height: 30px; width: 30px;">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="card-header GTA-BankFrontBG">
+                            <img src="maze-bank-long-logo.png" class="img-fluid w-50 pt-1 pb-1" draggable="false">
+                        </div>
+                        <div class="card-body GTA-BankPatternBG">
+                            <div class="card z-depth-0 remove-background rounded-0 mr-5 ml-5">
+                                <div class="card-header rounded-0 p-0 text-center remove-border remove-background" style="color: #b11e26;">Your Balance</div>
+                                <div class="card-body p-0 text-center black-text">
+                                    <div class="GTA-ATMbalanceAmount">
+                                        <span>$</span>&nbsp;<span id="BalanceDeposit">43,307</span>
+                                    </div>
+                                    <div class="container pt-4">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col"></div>
+                                            <div class="col-12 col-md-auto">
+                                                <div class="card z-depth-0 rounded-0">
+                                                    <div class="card-body p-0 text-center">
+                                                        <div class="md-form m-1 pt-1 pb-1 pl-4 pr-4 MoneyAmountNumber">
+                                                            <input type="number" class="DepositAmount form-control text-center" placeholder="Money Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col"></div>
+                                        </div>
+                                        <div class="row pt-2">
+                                            <div class="col-12 black-text">
+
+                                                <span class="BankIDDeposit badge badge-pill badge-danger z-depth-0 p-2">Your bank ID: 572832 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-0">
+                            <div class="btn-group btn-block" role="group">
+                                <button type="button" class="btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0" data-dismiss="modal">
+                                    <span class="lead">go back</span>
+                                </button>
+                                <button type="button" class="btn-ATMDeposit btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0">
+                                    <span class="lead">confirm transaction</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer remove-border p-0 rounded" style="background-color: #e3e3e3">
+                    <div class="p-0">
+                        <img class="img-fluid " draggable="false" src="maze-bank-long-advert.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="modal animated fadeIn faster bottom" id="withdraw-tab" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content z-depth-0 remove-background">
+                <div class="modal-body text-white pl-0 pr-0 pt-0 pb-2">
+                    <div class="card z-depth-0 text-center GTA-MaxScrollHeight">
+                        <div class="card-header text-white text-left GTA-RedGradient1">
+                            <span class="lead">Withdraw</span>
+                            <button class="btn btn-light p-0 m-0 z-depth-0 float-right" type="button" data-dismiss="modal" style="height: 30px; width: 30px;">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="card-header GTA-BankFrontBG">
+                            <img src="maze-bank-long-logo.png" class="img-fluid w-50 pt-1 pb-1" draggable="false">
+                        </div>
+                        <div class="card-body GTA-BankPatternBG">
+                            <div class="card z-depth-0 remove-background rounded-0 mr-5 ml-5">
+                                <div class="card-header rounded-0 p-0 text-center remove-border remove-background" style="color: #b11e26;">Your Balance</div>
+                                <div class="card-body p-0 text-center black-text">
+                                    <div class="GTA-ATMbalanceAmount">
+                                        <span>$</span>&nbsp;<span id="BalanceWithdraw">43,307</span>
+                                    </div>
+                                    <div class="container pt-4">
+                                        <div class="row justify-content-md-center">
+                                            <div class="col"></div>
+                                            <div class="col-12 col-md-auto">
+                                                <div class="card z-depth-0 rounded-0">
+                                                    <div class="card-body p-0 text-center">
+                                                        <div class="md-form m-1 pt-1 pb-1 pl-4 pr-4 MoneyAmountNumber">
+                                                            <input type="number" class="WithdrawAmount form-control text-center" placeholder="Money Amount">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col"></div>
+                                        </div>
+                                        <div class="row pt-2">
+                                            <div class="col-12 black-text">
+
+                                                <span class="BankIDWithdraw badge badge-pill badge-danger z-depth-0 p-2">Your bank ID: 572832 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer p-0">
+                            <div class="btn-group btn-block" role="group">
+                                <button type="button" class="btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0" data-dismiss="modal">
+                                    <span class="lead">go back</span>
+                                </button>
+                                <button type="button" class="btn-ATMWithdraw btn btn-light btn-RedHover p-3 m-0 w-50 z-depth-0 rounded-0">
+                                    <span class="lead">confirm transaction</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer remove-border p-0 rounded" style="background-color: #e3e3e3">
+                    <div class="p-0">
+                        <img class="img-fluid " draggable="false" src="maze-bank-long-advert.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+    <!-- Stacks multiple Modals -->
+    <script type="text/javascript" src="../../js/MultiModalStack.js"></script>
+    <!-- UI Events Script (DO NOT REMOVE) -->
+    <script type="text/javascript" src="../../UI-Actions/ATM-UI.js"></script>
+
+</body>
+
+</html>

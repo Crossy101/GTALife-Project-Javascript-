@@ -1,0 +1,95 @@
+.fade {
+    background-color: transparent !important;
+}
+
+.remove-border {
+    border: none;
+}
+
+.remove-background {
+    background-color: transparent;
+}
+
+.GTA-MaxScrollHeight {
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+body {
+	background-color: transparent !important;
+    -ms-overflow-style: none;
+}
+
+.GTA-grey-darken-3 {
+    background-color: rgb(38, 38, 38);
+}
+
+.btn-RedHover:hover {
+    background-color: #df2933 !important;
+    color: #e3e3e3 !important;
+    
+}
+
+
+.btn-light {
+    background-color: #fff !important;
+    
+}
+
+.GTA-ATMbalanceAmount {
+    font-size: 2em;
+    font-weight: 200;
+}
+
+.GTA-BankPatternBG {
+    background-image: url(maze-bank-pattern-screen-bg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.GTA-BankFrontBG {
+    background-image: url(maze-bank-front-screen-bg.jpg); 
+}
+
+.md-form input[type="number"]:focus,
+select.form-control:focus {
+  border-bottom: 1px solid #b11e26 !important;
+  box-shadow: 0 1px 0 0 #b11e26 !important;
+  color: #b11e26;
+}
+
+input[type="nunber"],
+select.form-control { 
+    color: #b11e26;
+}
+
+.md-form input[type=number] {
+    border-bottom: 1px solid #b11e26 !important;
+}
+
+.MoneyAmountNumber input::-webkit-outer-spin-button,
+.MoneyAmountNumber input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.GTA-RedGradient1 {
+background: rgb(153,29,31);
+background: -moz-linear-gradient(top,  rgba(153,29,31,1) 0%, rgba(204,38,41,1) 50%, rgba(178,33,36,1) 52%, rgba(223,41,51,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(153,29,31,1) 0%,rgba(204,38,41,1) 50%,rgba(178,33,36,1) 52%,rgba(223,41,51,1) 100%);
+background: linear-gradient(to bottom,  rgba(153,29,31,1) 0%,rgba(204,38,41,1) 50%,rgba(178,33,36,1) 52%,rgba(223,41,51,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#991d1f', endColorstr='#df2933',GradientType=0 );
+
+}

@@ -1,0 +1,38 @@
+.fade {
+    background-color: transparent !important;
+}
+
+.remove-border {
+    border: none;
+}
+
+.GTA-MaxScrollHeight {
+    height: 245px;
+    max-height: 245px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+.remove-background {
+    background-color: transparent;
+}
+
+.GTA-UItrasparent {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.GTA-grey-darken-3 {
+    background-color: rgb(38, 38, 38);
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link href="../../fa/all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../../css/Login-sys-UI.css" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="myaudiolist" preload="auto">
+      <source src="../../sound/mouseclick.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col">
+            </div>
+
+            <div class="col-lg-3 col-md-6 my-auto">
+                <div class="card animated fadeIn" id="FadeInJS">
+                    <div class="card-header elegant-color">
+                        <img class="mb-3 img-fluid mx-auto d-block" alt="GTA_Logo" src="../../img/gtalife-logo-header-230x80.png">
+                        <h6 class="card-title mb-2 text-white text-center lead">We promise to provide a fun, enjoyable and lasting role play experience during your time with us as a member.</h6>
+                    </div>
+                    <div class="card-body elegant-color-dark">
+
+                        <span class="text-white lead">Login to your account</span><br>
+                        <small class="grey-text">Welcome to GTA Life, feel free to login to your account or create one if you're a new member.</small>
+
+                        <hr style="border-color: white;">
+
+                        <form class="mb-1 mt-1">
+                            <!-- Username -->
+                            <div id="usernamegroup" class="input-group pt-2 pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input id="usernamediv" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								<div class="usernameincorrect col-sm-12">
+									<small></small>
+								</div>
+                            </div>
+
+                            <!-- Password -->
+                            <div id="passwordgroup" class="input-group pt-2 pb-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input id="passworddiv" type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+								<div class="passwordincorrect col-sm-12">
+									<small></small>
+								</div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="card-footer elegant-color">
+                        <!-- Card Footer -->
+                        <div class="row">
+                            <div class="col-12 mb-1">
+                                <button type="button" class="btn-GTALogin btn btn-sm btn-block unique-color text-white">
+                                    <i class="fa fa-sign-in mr-1" aria-hidden="true"></i>Login
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn-GTARegister btn btn-sm btn-block special-color text-white">
+                                    <i class="fa fa-user-plus mr-1" aria-hidden="true"></i>Register
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn-GTAForgotPass btn btn-sm btn-block special-color text-white">
+                                    <i class="fa fa-unlock-alt  mr-1" aria-hidden="true"></i>Forgot Password
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="../../js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../../js/mdb.min.js"></script>
+	<!-- UI Events Script (DO NOT REMOVE) -->
+	<script type="text/javascript" src="../../UI-Actions/login-screen-UI.js"></script>
+</body>
+
+</html>
